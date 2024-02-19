@@ -13,6 +13,6 @@ public class SearchUserUseCase {
   private final UserRepository userRepository;
 
   public User findUser(UUID id) {
-    return userRepository.findUser(id);
+    return userRepository.findById(id);
   }
 }

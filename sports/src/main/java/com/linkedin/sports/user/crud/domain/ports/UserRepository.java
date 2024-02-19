@@ -4,5 +4,7 @@ import com.linkedin.sports.user.crud.domain.models.User;
 import java.util.UUID;
 
 public interface UserRepository {
-  User findUser(UUID id);
+  User findById(UUID id);
+
+  void create(User user);
 }
