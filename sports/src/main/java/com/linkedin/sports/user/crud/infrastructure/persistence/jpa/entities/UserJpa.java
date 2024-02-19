@@ -11,7 +11,6 @@ import lombok.*;
 @ToString
 @RequiredArgsConstructor
 @Entity
-@NoArgsConstructor
 @AllArgsConstructor
 public class UserJpa {
 
