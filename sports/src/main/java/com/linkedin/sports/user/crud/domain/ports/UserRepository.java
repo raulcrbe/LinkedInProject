@@ -7,4 +7,8 @@ public interface UserRepository {
   User findById(UUID id);
 
   void create(User user);
+
+  void update(User user);
+
+  void delete(UUID id);
 }
