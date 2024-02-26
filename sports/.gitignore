@@ -2,7 +2,7 @@ HELP.md
 .gradle
 build/
 ../idea/
-idea/
+../idea/sonarlint
 !gradle/wrapper/gradle-wrapper.jar
 !**/src/main/**/build/
 !**/src/test/**/build/
@@ -21,7 +21,8 @@ bin/
 
 ### IntelliJ IDEA ###
 .DS_Store
-.idea
+.idea/
+.idea/sonarlint/
 *.iws
 *.iml
 *.ipr
