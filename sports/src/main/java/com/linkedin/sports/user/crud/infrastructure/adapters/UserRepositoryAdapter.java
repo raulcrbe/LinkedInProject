@@ -1,6 +1,6 @@
 package com.linkedin.sports.user.crud.infrastructure.adapters;
 
-import com.linkedin.sports.shared_kernel.exceptions.ApplicationException;
+import com.linkedin.sports.shared_kernel.domain.exceptions.ApplicationException;
 import com.linkedin.sports.user.crud.domain.UserError;
 import com.linkedin.sports.user.crud.domain.models.User;
 import com.linkedin.sports.user.crud.domain.ports.UserRepository;

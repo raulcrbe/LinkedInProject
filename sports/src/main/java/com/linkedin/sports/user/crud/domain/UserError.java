@@ -1,6 +1,6 @@
 package com.linkedin.sports.user.crud.domain;
 
-import com.linkedin.sports.shared_kernel.errors.ErrorResponse;
+import com.linkedin.sports.shared_kernel.domain.errors.ErrorResponse;
 import lombok.Getter;
 import org.springframework.http.HttpStatus;
 

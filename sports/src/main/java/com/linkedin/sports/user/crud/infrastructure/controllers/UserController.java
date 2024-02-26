@@ -5,6 +5,7 @@ import com.linkedin.sports.user.crud.application.delete_user.DeleteUserUseCase;
 import com.linkedin.sports.user.crud.application.search_users.SearchUserUseCase;
 import com.linkedin.sports.user.crud.application.update_user.UpdateUserUseCase;
 import com.linkedin.sports.user.crud.domain.models.User;
+import jakarta.validation.Valid;
 import java.util.UUID;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
@@ -32,7 +33,8 @@ public class UserController {
   }
 
   @PutMapping("/{id}")
-  public ResponseEntity<User> updateUser(@PathVariable("id") UUID id, @RequestBody User user) {
+  public ResponseEntity<User> updateUser(
+      @PathVariable("id") UUID id, @RequestBody @Valid User user) {
     user.setId(id);
     updateUserUseCase.updateUser(user);
     return ResponseEntity.ok().build();
